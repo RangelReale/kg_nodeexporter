@@ -61,7 +61,7 @@ class NodeExporterBuilder(Builder):
             options = NodeExporterOptions()
         self.options = options
 
-        self.object_names_update({
+        self.object_names_init({
             'daemonset': self.basename(),
             'pod-label-app': self.basename(),
         })
