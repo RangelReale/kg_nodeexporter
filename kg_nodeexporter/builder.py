@@ -51,9 +51,9 @@ class NodeExporterBuilder(Builder):
 
     SOURCE_NAME = 'kg_nodeexporter'
 
-    BUILD_SERVICE: TBuild = 'service'
+    BUILD_SERVICE = TBuild('service')
 
-    BUILDITEM_DAEMONSET: TBuildItem = 'daemonset'
+    BUILDITEM_DAEMONSET = TBuildItem('daemonset')
 
     def __init__(self, kubragen: KubraGen, options: Optional[NodeExporterOptions] = None):
         super().__init__(kubragen)
